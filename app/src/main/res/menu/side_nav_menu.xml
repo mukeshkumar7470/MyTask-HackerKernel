@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="Dashboard"
+        android:id="@+id/s_dashboard"
+        android:icon="@drawable/ic_home"
+        />
+
+    <item android:title="Articles"
+        android:id="@+id/menu"
+        android:icon="@drawable/ic_all_articals"
+        />
+
+    <item android:title="Videos"
+        android:id="@+id/video"
+        android:icon="@drawable/ic_video"
+        />
+
+    <item android:title="Categories"
+        android:id="@+id/categories"
+        android:icon="@drawable/ic_category"
+        />
+
+    <item android:title="Help"
+        android:id="@+id/help"
+        android:icon="@drawable/ic_help"
+        />
+
+    <item android:title="Log out"
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_logout"
+        />
+
+</menu>
