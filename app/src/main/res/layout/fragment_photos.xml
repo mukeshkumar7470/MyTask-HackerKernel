@@ -8,7 +8,7 @@
     android:background="#203F51B5">
 
     <com.facebook.shimmer.ShimmerFrameLayout
-        android:id="@+id/shimmerLayout"
+        android:id="@+id/shimmer_Layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:ignore="MissingConstraints">

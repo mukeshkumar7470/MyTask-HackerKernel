@@ -65,7 +65,7 @@ public class PhotosFragment extends Fragment {
 
         recyclerDataArrayList = new ArrayList<>();
 //        mprogressBar = view.findViewById(R.id.progress_bar);
-        mFrameLayout =view.findViewById(R.id.shimmerLayout);
+        mFrameLayout =view.findViewById(R.id.shimmer_Layout);
 
         // call api
         getPhotos();

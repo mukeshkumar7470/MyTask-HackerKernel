@@ -16,6 +16,7 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.mukeshkpdeveloper.mytask.R;
+import com.mukeshkpdeveloper.mytask.UI.activity.LoginActivity;
 import com.mukeshkpdeveloper.mytask.UI.activity.MainActivity;
 
 
@@ -32,7 +33,7 @@ public class Util {
 
     public static void logoutMethod(Context ctx){
         AppPreference.clearAllPreferences(ctx);
-        Intent intent  = new Intent(ctx, MainActivity.class);
+        Intent intent  = new Intent(ctx, LoginActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         ctx.startActivity(intent);
 

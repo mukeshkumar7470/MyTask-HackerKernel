@@ -11,6 +11,7 @@ import android.widget.Button;
 import com.mukeshkpdeveloper.mytask.R;
 import com.mukeshkpdeveloper.mytask.UI.activity.MainActivity;
 import com.mukeshkpdeveloper.mytask.utils.AppPreference;
+import com.mukeshkpdeveloper.mytask.utils.Util;
 
 public class LogoutDialogClass extends Dialog implements
         View.OnClickListener {
@@ -41,9 +42,7 @@ public class LogoutDialogClass extends Dialog implements
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_yes:
-                AppPreference.clearAllPreferences(c);
-                c.startActivity(new Intent(c, MainActivity.class));
-                c.finish();
+                Util.logoutMethod(c);
                 break;
             case R.id.btn_no:
                 dismiss();

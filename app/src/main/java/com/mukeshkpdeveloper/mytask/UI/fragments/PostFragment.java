@@ -15,12 +15,10 @@ import android.widget.Toast;
 
 import com.facebook.shimmer.ShimmerFrameLayout;
 import com.mukeshkpdeveloper.mytask.R;
-import com.mukeshkpdeveloper.mytask.adapters.PhotosAdapter;
 import com.mukeshkpdeveloper.mytask.adapters.PostsAdapter;
 import com.mukeshkpdeveloper.mytask.models.PostsModel;
 import com.mukeshkpdeveloper.mytask.networking.ApiInterface;
 import com.mukeshkpdeveloper.mytask.utils.Constant;
-import com.mukeshkpdeveloper.mytask.utils.OnRecyclerClickListner;
 import com.mukeshkpdeveloper.mytask.utils.Util;
 
 import java.util.ArrayList;
@@ -66,7 +64,7 @@ public class PostFragment extends Fragment {
 
     private void getPosts() {
         if (Util.isNetworkAvailable(context)) {
-            mprogressBar.setVisibility(View.VISIBLE);
+//            mprogressBar.setVisibility(View.VISIBLE);
             Retrofit retrofit = new Retrofit.Builder()
                     .baseUrl(Constant.POST_URL)
                     .addConverterFactory(GsonConverterFactory.create())
@@ -78,7 +76,7 @@ public class PostFragment extends Fragment {
                 public void onResponse(Call<ArrayList<PostsModel>> call, Response<ArrayList<PostsModel>> response) {
                     // inside on response method we are checking
                     // if the response is success or not.
-                    mprogressBar.setVisibility(View.GONE);
+//                    mprogressBar.setVisibility(View.GONE);
                     if (response.code() == 200) {
                         recyclerDataArrayList = response.body();
 
